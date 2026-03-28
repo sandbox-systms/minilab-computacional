@@ -356,7 +356,7 @@ Se ficar preso:
 - 📖 Leia a [documentação](docs/)
 - 🔍 Procure nos issues existentes
 - 💬 Abra uma issue nova
-- 📧 Contate: dev@minilab.edu
+- 📧 Contate: ghostnether28@gmail.com
 
 ---
 
