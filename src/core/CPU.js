@@ -54,19 +54,19 @@ export class CPU {
    */
   execute(opcode, operand) {
     switch (opcode) {
-      case 0x00: // LOAD
-        this.registers.A = this.MDR;
-        break;
-      case 0x02: // ADD
-        this.registers.A += this.registers.B;
-        this.updateFlags();
-        break;
-      case 0x03: // SUB
-        this.registers.A -= this.registers.B;
-        this.updateFlags();
-        break;
-      case 0x08: // NOP (No Operation)
-        break;
+    case 0x00: // LOAD
+      this.registers.A = this.MDR;
+      break;
+    case 0x02: // ADD
+      this.registers.A += this.registers.B;
+      this.updateFlags();
+      break;
+    case 0x03: // SUB
+      this.registers.A -= this.registers.B;
+      this.updateFlags();
+      break;
+    case 0x08: // NOP (No Operation)
+      break;
     }
   }
 
