@@ -1,0 +1,41 @@
+{
+  "name": "minilab-computacional",
+  "version": "1.0.0",
+  "description": "Simulador interativo de arquitetura de computadores para ensino técnico",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "build": "echo 'Build script'",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write 'src/**/*.js'",
+    "server": "http-server public/ -p 8080"
+  },
+  "keywords": [
+    "arquitetura",
+    "computadores",
+    "simulação",
+    "educação",
+    "visualização"
+  ],
+  "author": "UNIASSELVI",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.1",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3",
+    "http-server": "^14.1.1"
+  }
+}

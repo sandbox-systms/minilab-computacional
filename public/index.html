@@ -1,0 +1,92 @@
+// public/index.html - Interface Web
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniLab Computacional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🖥️ MiniLab Computacional</h1>
+            <p>Simulador Interativo de Arquitetura de Computadores</p>
+        </header>
+
+        <main>
+            <section class="layout">
+                <!-- Left: CPU Components -->
+                <aside class="sidebar-left">
+                    <div class="panel">
+                        <h2>📊 Registradores</h2>
+                        <div class="registers">
+                            <div class="register">
+                                <span>A:</span>
+                                <input type="text" id="register-a" readonly>
+                            </div>
+                            <div class="register">
+                                <span>B:</span>
+                                <input type="text" id="register-b" readonly>
+                            </div>
+                            <div class="register">
+                                <span>PC:</span>
+                                <input type="text" id="register-pc" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <h2>🚩 Flags</h2>
+                        <div class="flags">
+                            <label><input type="checkbox" id="flag-z" disabled> Zero</label>
+                            <label><input type="checkbox" id="flag-c" disabled> Carry</label>
+                            <label><input type="checkbox" id="flag-o" disabled> Overflow</label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Center: Visualization -->
+                <section class="center">
+                    <canvas id="cpu-canvas" width="600" height="400"></canvas>
+                </section>
+
+                <!-- Right: Controls -->
+                <aside class="sidebar-right">
+                    <div class="panel">
+                        <h2>🎮 Controles</h2>
+                        <button id="step-btn" class="btn-primary">Step</button>
+                        <button id="run-btn" class="btn-primary">Run</button>
+                        <button id="pause-btn" class="btn-secondary">Pause</button>
+                        <button id="reset-btn" class="btn-secondary">Reset</button>
+                    </div>
+
+                    <div class="panel">
+                        <h2>📈 Estatísticas</h2>
+                        <div class="stats">
+                            <p>Ciclos: <span id="stat-cycles">0</span></p>
+                            <p>Instruções: <span id="stat-instructions">0</span></p>
+                            <p>Status: <span id="stat-status">IDLE</span></p>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <h2>📝 Log</h2>
+                        <textarea id="log-area" readonly></textarea>
+                    </div>
+                </aside>
+            </section>
+        </main>
+
+        <footer>
+            <p>MiniLab Computacional v1.0.0 | Projeto Acadêmico UNIASSELVI</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

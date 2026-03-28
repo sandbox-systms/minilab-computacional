@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  minilab:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - LOG_LEVEL=info
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+    networks:
+      - minilab-network
+
+networks:
+  minilab-network:
+    driver: bridge
