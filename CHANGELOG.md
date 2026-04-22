@@ -4,7 +4,7 @@
 
 All notable changes to MiniLab Computacional are documented in this file.
 
-## [1.0.0] - 2024
+## [1.0.0] - 2026
 
 ### Initial Release
 
@@ -150,4 +150,4 @@ minilab-computacional/
 
 ---
 
-*Last Updated: 2024*
+*Last Updated: 2026
